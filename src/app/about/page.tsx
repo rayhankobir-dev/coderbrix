@@ -49,7 +49,7 @@ function AboutPage() {
           <h2 className="font-medium uppercase">Apps Integrations</h2>
         </div>
 
-        <div className="opacity-0 w-[1px] py-20 mx-auto bg-neutral-200"></div>
+        <div className="opacity-0 lg:opacity-100 w-[1px] py-20 mx-auto bg-neutral-200"></div>
 
         <div className="space-y-2">
           <h1 className="font-semibold text-6xl">130%</h1>
