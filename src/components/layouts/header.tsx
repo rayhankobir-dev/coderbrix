@@ -43,7 +43,7 @@ function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 duration-500 border-b border-neutral-200",
+        "sticky top-0 z-50 duration-500 border-b lg:border-none border-neutral-200",
         isVisible ? "translate-y-0 bg-white" : "-translate-y-full",
         lastScrollY > 100 && "bg-white"
       )}
