@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /404
+Disallow: /500
+Allow: /
+Allow: /api/og/*
+Allow: /favicon.ico
+Allow: /apple-icon.png
+Allow: /icon.svg
+Sitemap: https://www.coderbrix.com/sitemap.xml
