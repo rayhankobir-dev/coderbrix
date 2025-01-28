@@ -4,14 +4,14 @@ import React from "react";
 
 function NewsLetter() {
   return (
-    <section className="relative w-full max-w-5xl h-fit mx-auto py-12 md:py-20 lg:py-28 rounded-2xl lg:rounded-3xl overflow-hidden">
+    <section className="relative w-full max-w-5xl h-fit mx-auto rounded-2xl lg:rounded-3xl overflow-hidden">
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/images/bg/green-strip-bg.png"
         alt="news letter"
       />
 
-      <div className="relative max-w-2xl flex flex-col items-center justify-between gap-8 mx-auto px-6">
+      <div className="relative w-full h-full flex flex-col items-center justify-between gap-8 px-6 py-12 md:py-20 lg:py-28 bg-primary/50">
         <h1 className="max-w-3xl font-title font-medium text-4xl md:text-5xl lg:text-7xl text-white text-center">
           <span>Driving clients and</span>
           <span className="font-uncut font-medium tracking-tighter">

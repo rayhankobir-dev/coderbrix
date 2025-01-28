@@ -39,6 +39,18 @@ function Header() {
     };
   }, [lastScrollY]);
 
+  React.useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileOpen]);
+
   return (
     <header
       className={cn(
@@ -85,19 +97,21 @@ function Header() {
           ))}
         </ul>
 
-        <Link
-          className="hidden lg:block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
-          href="/meeting"
-        >
-          Schedule a Call
-        </Link>
+        <div className="flex items-center gap-5">
+          <Link
+            className="hidden lg:block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
+            href="/meeting"
+          >
+            Schedule a Call
+          </Link>
 
-        <button
-          className="lg:hidden"
-          onClick={() => setIsMobileOpen((prev) => !prev)}
-        >
-          <Menu />
-        </button>
+          <button
+            className="lg:hidden"
+            onClick={() => setIsMobileOpen((prev) => !prev)}
+          >
+            <Menu size={30} />
+          </button>
+        </div>
       </nav>
       <div
         className={cn(

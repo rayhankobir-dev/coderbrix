@@ -6,7 +6,7 @@ function Cta() {
   return (
     <section className="relative w-full h-fit py-20 md:py-36 bg-[#0c3721] overflow-hidden">
       <img
-        className="absolute top-0 left-0 w-full h-full object-cover md:object-top"
+        className="absolute top-0 left-0 w-full md:h-full object-cover md:object-left-top"
         src="/images/vectors/cta-section.svg"
         alt="cta section"
       />

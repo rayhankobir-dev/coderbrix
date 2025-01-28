@@ -12,8 +12,9 @@ export default function Demo(): JSX.Element {
           <span className="font-title">Our working process</span> <br />
           <span className="font-uncut tracking-tighter">Fast convert</span>
         </h1>
-        <div className="grid md:grid-cols-2 items-start mb-20">
-          <div className="sticky top-5 h-screen flex flex-col justify-start gap-4 pr-12">
+
+        <div className="grid md:grid-cols-2 items-start gap-10 md:gap-12 mb-20">
+          <div className="lg:sticky top-5 min-h-screen flex flex-col justify-center gap-4 pr-12">
             <div className="space-y-4">
               <h2 className="font-medium font-uncut tracking-tight text-3xl">
                 The large scale benefits of Primex
@@ -53,42 +54,6 @@ export default function Demo(): JSX.Element {
 
               <li className="flex items-start gap-4">
                 <ShieldCheck className="h-8 w-8 text-primary" />
-                <div className="space-y-2">
-                  <h3 className="font-medium font-uncut tracking-tighter text-xl">
-                    Increased conversion rate
-                  </h3>
-                  <p className="text-base">
-                    Increased conversion rate by focusing on leads that have.
-                  </p>
-                </div>
-              </li>
-
-              <li className="flex items-start gap-4">
-                <ShieldCheck className="h-8 w-8 text-primary" />
-                <span className="space-y-2">
-                  <h3 className="font-medium font-uncut tracking-tighter text-xl">
-                    Increased conversion rate
-                  </h3>
-                  <p className="text-base">
-                    Increased conversion rate by focusing on leads that have.
-                  </p>
-                </span>
-              </li>
-
-              <li className="flex items-start gap-4">
-                <ShieldCheck className="h-8 w-8 text-primary" />
-                <span className="space-y-2">
-                  <h3 className="font-medium font-uncut tracking-tighter text-xl">
-                    Increased conversion rate
-                  </h3>
-                  <p className="text-base">
-                    Increased conversion rate by focusing on leads that have.
-                  </p>
-                </span>
-              </li>
-
-              <li className="flex items-start gap-4">
-                <ShieldCheck className="h-8 w-8 text-primary" />
                 <span className="space-y-2">
                   <h3 className="font-medium font-uncut tracking-tighter text-xl">
                     Increased conversion rate
@@ -120,11 +85,11 @@ export default function Demo(): JSX.Element {
                 src="/images/bg/green-strip-bg.png"
                 alt="bg"
               />
-              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-20 bg-primary/30">
-                <h1 className="font-medium text-5xl text-white text-tracking-tighter">
+              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-10 md:py-14 lg:py-20 bg-primary/30">
+                <h1 className="font-medium text-2xl md:text-3xl lg:text-5xl text-white text-tracking-tighter">
                   The large scale benefits of Coderbrix
                 </h1>
-                <p className="text-lg text-white">
+                <p className="text-sm md:text-base lg:text-lg text-white">
                   Concentrate on leads that have been thoroughly verified and
                   are ready to be converted into loyal customers, ensuring a
                   higher success rate.
@@ -138,11 +103,11 @@ export default function Demo(): JSX.Element {
                 src="/images/bg/blue-strip-bg.png"
                 alt="bg"
               />
-              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-20">
-                <h1 className="font-medium text-5xl text-white text-tracking-tighter">
+              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-10 md:py-14 lg:py-20">
+                <h1 className="font-medium text-2xl md:text-3xl lg:text-5xl text-white text-tracking-tighter">
                   The large scale benefits of Coderbrix
                 </h1>
-                <p className="text-lg text-white">
+                <p className="text-sm md:text-base lg:text-lg text-white">
                   Concentrate on leads that have been thoroughly verified and
                   are ready to be converted into loyal customers, ensuring a
                   higher success rate.
@@ -156,11 +121,11 @@ export default function Demo(): JSX.Element {
                 src="/images/bg/purple-strip-bg.png"
                 alt="bg"
               />
-              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-20 bg-purple-800/30">
-                <h1 className="font-medium text-5xl text-white text-tracking-tighter">
+              <div className="relative h-full w-full flex flex-col items-center justify-center gap-10 px-10 py-10 md:py-14 lg:py-20 bg-purple-800/30">
+                <h1 className="font-medium text-2xl md:text-3xl lg:text-5xl text-white text-tracking-tighter">
                   The large scale benefits of Coderbrix
                 </h1>
-                <p className="text-lg text-white">
+                <p className="text-sm md:text-base lg:text-lg text-white">
                   Concentrate on leads that have been thoroughly verified and
                   are ready to be converted into loyal customers, ensuring a
                   higher success rate.

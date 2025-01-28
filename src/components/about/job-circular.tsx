@@ -33,7 +33,7 @@ function JobCard() {
 
 function JobCircular() {
   return (
-    <section className="max-w-6xl mx-auto py-24 px-6 md:px-4">
+    <section className="max-w-6xl mx-auto py-16 md:py-20 lg:py-24 px-6 md:px-4">
       <h1 className="font-semibold text-4xl md:text-5xl lg:text-6xl text-center mb-14 md:mb-16 lg:mb-20">
         Current job openings
       </h1>
