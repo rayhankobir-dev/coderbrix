@@ -55,10 +55,10 @@ const Gallery: React.FC<GalleryProps> = ({
                 currentIndex === index && "md:translate-x-0"
               )}
             >
-              <h1 className="text-4xl font-semibold">
+              <h1 className="text-4xl font-uncut tracking-tighter">
                 “Simplifies schedule reducing”
               </h1>
-              <p className="text-lg">
+              <p className="font-light text-lg">
                 Unlocking the power of automation in recruitment
               </p>
             </div>
