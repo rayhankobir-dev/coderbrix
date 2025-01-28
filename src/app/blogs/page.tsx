@@ -95,7 +95,9 @@ function BlogsPage() {
       <section className="w-full h-fit py-16 md:py-20 lg:py-28 overflow-hidden">
         <h1 className="flex flex-col items-center justify-center font-title font-medium text-4xl md:text-5xl lg:text-7xl">
           <span>Our blogs</span>
-          <span className="font-uncut font-medium">and resources.</span>
+          <span className="font-uncut font-medium tracking-tighter">
+            and resources.
+          </span>
         </h1>
       </section>
 
@@ -143,7 +145,9 @@ function BlogsPage() {
       <section className="max-w-6xl flex flex-col lg:flex-row items-center lg:items-end justify-between gap-12 mx-auto mt-24 px-6 md:px-4">
         <h1 className="flex flex-col font-medium text-4xl md:text-5xl lg:text-6xl">
           <span className="font-title">Our resources</span>
-          <span className="font-uncut">and insights.</span>
+          <span className="font-uncut font-medium tracking-tighter">
+            and insights.
+          </span>
         </h1>
 
         <div className="flex items-center gap-2 font-medium">
