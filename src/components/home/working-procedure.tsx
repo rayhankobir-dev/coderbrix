@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
 import { JSX } from "react";
 import { ReactLenis } from "lenis/react";
 import { ShieldCheck } from "lucide-react";
 
-export default function Demo(): JSX.Element {
+export default function WorkingProcedure(): JSX.Element {
   return (
     <ReactLenis root>
       <section className="max-w-6xl mx-auto px-6 md:px-4">

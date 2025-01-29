@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 function Cta() {
   return (
@@ -11,19 +12,29 @@ function Cta() {
         alt="cta section"
       />
 
-      <div className="relative max-w-3xl flex flex-col items-center justify-between gap-8 mx-auto px-6">
-        <h1 className="font-semibold text-3xl md:text-6xl lg:text-7xl text-white text-center">
-          Ultimate solution for modern website
+      <div className="relative max-w-4xl flex flex-col items-center justify-between gap-8 mx-auto px-6">
+        <h1 className="font-medium text-4xl md:text-6xl lg:text-7xl text-white text-center">
+          <span className="font-title text-nowrap">
+            We develop software solutions.
+          </span>{" "}
+          <br />
+          <span className="font-uncut tracking-tighter">
+            That bring you success.
+          </span>
         </h1>
-        <p className="font-manrope text-base md:text-lg text-white text-center">
-          Things change. Markets and borrower needs evolve. Canopy provides
-          modern lending built to adapt and grow
+        <p className="font-manrope text-base md:text-xl text-white text-center">
+          From sparking ideas to driving growth, we guide you through every step
+          of product development. Partner with a team truly dedicated to your
+          success in conquering the market.
         </p>
 
-        <button className="flex items-center gap-2 py-2.5 px-5 rounded-full bg-white font-manrope">
-          View more
+        <Link
+          href="/contact"
+          className="flex items-center gap-2 py-2.5 px-6 mt-6 rounded-full bg-white font-manrope font-medium"
+        >
+          Hire Team
           <ArrowUpRight size={16} />
-        </button>
+        </Link>
       </div>
     </section>
   );
