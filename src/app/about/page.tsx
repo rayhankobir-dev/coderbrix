@@ -2,7 +2,6 @@
 import React from "react";
 import Cta from "@/components/home/cta";
 import { ArrowUpRight } from "lucide-react";
-import JobCircular from "@/components/about/job-circular";
 
 function AboutPage() {
   return (
@@ -92,7 +91,6 @@ function AboutPage() {
         </div>
         <img src="/images/vectors/globe.svg" alt="globe" />
       </section>
-      <JobCircular />
       <Cta />
       <section className="relative py-24">
         <img

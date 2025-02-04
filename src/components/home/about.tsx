@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="hidden py-24">
+    <section className="py-24">
       <div className="w-fit flex items-center gap-5 mx-auto">
         <img src="/images/vectors/line.svg" alt="line" />
         <div className="flex items-center font-semibold text-5xl text-primary">

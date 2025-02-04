@@ -72,7 +72,7 @@ function BlogCard({ blog }: any) {
           <h3>{blog.category}</h3>
         </div>
 
-        <h1 className="font-medium text-base md:text-lg lg:text-xl">
+        <h1 className="font-medium font-uncut tracking-tight text-base md:text-lg lg:text-xl">
           {blog.title}
         </h1>
 
@@ -102,9 +102,9 @@ function BlogsPage() {
       </section>
 
       <section className="max-w-6xl grid md:grid-cols-2 mx-auto border rounded-2xl overflow-hidden">
-        <div className="order-2 md:order-1 flex flex-col justify-between gap-12 p-10">
+        <div className="order-2 md:order-1 flex flex-col justify-between gap-12 p-4 md:p-6 lg:p-10">
           <div className="flex flex-col gap-5">
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5 text-sm md:text-base">
               <p className="inline-flex items-center gap-1.5">
                 <Calendar size={18} />
                 August 25, 2024
@@ -114,7 +114,7 @@ function BlogsPage() {
               </p>
             </div>
 
-            <h1 className="font-medium text-2xl md:text-4xl lg:text-5xl">
+            <h1 className="font-medium font-uncut tracking-tight text-2xl md:text-4xl lg:text-5xl">
               Enhancing candidate experience with Overix ATS: best practices.
             </h1>
 

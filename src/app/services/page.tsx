@@ -1,6 +1,6 @@
+import React from "react";
 import Services from "@/components/home/services";
 import WorkingPriciples from "@/components/home/working-priciples";
-import React from "react";
 
 function ServicePage() {
   return (

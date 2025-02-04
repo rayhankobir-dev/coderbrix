@@ -17,16 +17,12 @@ function Hero() {
           Reach out for development
         </div>
         <div className="max-w-3xl flex flex-col gap-6 mx-auto">
-          <h1 className="font-medium text-4xl md:text-6xl lg:text-7xl text-primary/90 text-center">
-            <span className="font-title font-semibold">
-              Ultimate destination
-            </span>
+          <h1 className="font-medium text-4xl md:text-6xl lg:text-7xl text-primary/90 text-center tracking-tighter">
+            <span className="font-uncut">Ultimate destination</span>
             <br />
-            <span className="font-uncut tracking-tighter">
-              for software solutions.
-            </span>
+            <span className="font-uncut">for software solutions.</span>
           </h1>
-          <p className="font-manrope text-xl text-center">
+          <p className="font-manrope text-base md:text-lg lg:text-xl text-center">
             At Coderbrix, we combine the latest technologies, technical skills
             and industry expertise to build the most powerful software solutions
             that help you to scale up your business.
@@ -37,6 +33,7 @@ function Hero() {
           <Link
             className="block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
             href="https://calendly.com/coderbrix"
+            target="_blank"
           >
             Schedule a Call
           </Link>

@@ -100,7 +100,8 @@ function Header() {
         <div className="flex items-center gap-5">
           <Link
             className="hidden lg:block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
-            href="/meeting"
+            href="https://calendly.com/coderbrix"
+            target="_blank"
           >
             Schedule a Call
           </Link>

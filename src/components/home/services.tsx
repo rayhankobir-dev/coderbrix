@@ -7,58 +7,58 @@ const services = [
     title: "Staff Augmentation",
     description:
       "Expand your team and capabilities with experienced professionals.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/Palette.svg",
+    icon: "/images/services/palette.svg",
   },
   {
     id: 4,
     title: "UX/UI Design",
     description:
       "Ensuring quality and reliability in every step of your software lifecycle.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/happyEmoji.svg",
+    icon: "/images/services/happy-emoji.svg",
   },
   {
     id: 2,
     title: "Back-End Service",
     description: "Powering your digital solutions behind the scenes.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/display.svg",
+    icon: "/images/services/development.svg",
   },
   {
     id: 3,
     title: "Mobile App Development",
     description: "Developing your mobile apps with ease.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/inbox.svg",
+    icon: "/images/services/inbox.svg",
   },
   {
     id: 6,
     title: "Web Development",
     description:
       "Building dynamic, user-friendly websites tailored to your needs.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/display1.svg",
+    icon: "/images/services/development.svg",
   },
   {
     id: 5,
     title: "Software Quality Assurance",
     description:
       "Ensuring quality and reliability in every step of your software lifecycle.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/happyEmoji.svg",
+    icon: "/images/services/happy-emoji.svg",
   },
   {
     id: 7,
     title: "Deployment & Monitoring",
     description: "Safeguarding your digital assets with advanced protection.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/eye.svg",
+    icon: "/images/services/eye.svg",
   },
   {
     id: 8,
     title: "Cloud Infrastructure",
     description: "Uncovering insights to create user-centered designs.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/eye.svg",
+    icon: "/images/services/development.svg",
   },
   {
-    id: 8,
+    id: 9,
     title: "Support & Consulting",
     description: "Turning your ideas into functional, market-ready products.",
-    icon: "https://zaagsys.com/assets/Icons/developmentServices/Suitcase.svg",
+    icon: "/images/services/suitecase.svg",
   },
 ];
 
@@ -72,7 +72,10 @@ function Services() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
         {services.map((service) => (
-          <article className="p-6 space-y-3 border rounded-xl" key={service.id}>
+          <article
+            className="p-6 space-y-3 hover:bg-primary/5 border rounded-xl duration-300"
+            key={service.id}
+          >
             <h1 className="font-medium font-uncut tracking-tight text-2xl">
               {service.title}
             </h1>

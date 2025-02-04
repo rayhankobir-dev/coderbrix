@@ -32,7 +32,7 @@ const companies = [
 function ClientsMarquee() {
   return (
     <div className="relative flex h-fit w-full flex-col items-center justify-center mb-24 overflow-hidden rounded-lg bg-background">
-      <h2 className="font-manrope text-xl mb-10">
+      <h2 className="font-manrope text-base md:text-lg lg:text-xl mb-12 md:mb-10">
         Trusted by some of the biggest brands
       </h2>
       <Marquee pauseOnHover className="[--duration:20s]">
