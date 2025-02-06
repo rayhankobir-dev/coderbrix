@@ -67,9 +67,10 @@ export default function RootLayout({
         <meta name="author" content="Coderbrix" />
         <meta
           name="google-site-verification"
-          content="1aZpThTY80rEsfEXNzPuRR8S2GWUZdJpNsCqk3j7lZg"
+          content="dsI4U5rEKDUy3-051Dlc4oHptlGuApdu5Bu-SODE78E"
         />
         <meta name="msvalidate.01" content="5A115588A060E527F51843FF3AA88CFE" />
+
         <link rel="canonical" href="https://www.coderbrix.com" />
         <meta
           property="og:title"
