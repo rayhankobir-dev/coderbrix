@@ -27,20 +27,26 @@ function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      console.log("Form submitted", formData);
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbzzd1bwjdPZ0kP_d1p0rWBsy2uncSKtYyEZDu61BreCuG_Ods0IS2lSO6_fGiVDYCwh0g/exec",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-      toast.success("Your message sent successfully!");
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          access_key: String(process.env.NEXT_PUBLIC_WEB3FORMS_API_KEY),
+        }),
+      });
+
+      await fetch(String(process.env.NEXT_PUBLIC_CONTACT_API_URL), {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `First_Name=${formData.firstName}&Last_Name=${formData.lastName}&Email=${formData.email}&Phone=${formData.phone}&Country=${formData.country}&Message=${formData.message}`,
+      });
+      toast.success("We will get back to you soon!");
     } catch {
-      toast.success("Your message sent successfully!");
+      toast.error("Failed to sent, please try again later!");
     } finally {
       setIsSubmitting(false);
     }
