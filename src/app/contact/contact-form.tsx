@@ -45,6 +45,15 @@ function ContactForm() {
         body: `First_Name=${formData.firstName}&Last_Name=${formData.lastName}&Email=${formData.email}&Phone=${formData.phone}&Country=${formData.country}&Message=${formData.message}`,
       });
       toast.success("We will get back to you soon!");
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        country: "",
+        message: "",
+      });
     } catch {
       toast.error("Failed to sent, please try again later!");
     } finally {
