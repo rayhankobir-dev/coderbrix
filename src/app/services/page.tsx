@@ -5,7 +5,7 @@ import WorkingPriciples from "@/components/home/working-priciples";
 function ServicePage() {
   return (
     <main>
-      <Services />
+      <Services className="py-16 md:py-20 lg:py-24" />
       <WorkingPriciples />
     </main>
   );

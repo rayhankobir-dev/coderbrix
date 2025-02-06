@@ -246,7 +246,7 @@ function Technologies() {
               key={index}
               onClick={() => setSelected(tag)}
               className={cn(
-                "relative z-10 px-5 py-2.5 border rounded-full font-medium font-manrope text-base text-nowrap transition-colors duration-300",
+                "relative z-10 h-fit min-w-fit px-5 py-2.5 border rounded-full font-medium font-manrope text-base text-nowrap transition-colors duration-300",
                 selected.slug === tag.slug && "text-white"
               )}
             >

@@ -10,7 +10,7 @@ function BlogsPage() {
   return (
     <main className="">
       <section className="w-full h-fit py-16 md:py-20 lg:py-28 px-6 md:px-4 overflow-hidden">
-        <h1 className="flex flex-col items-center justify-center font-title font-medium text-4xl md:text-5xl lg:text-7xl">
+        <h1 className="flex flex-col items-center justify-center font-title font-medium text-5xl md:text-5xl lg:text-7xl">
           <span>Our blogs</span>
           <span className="font-uncut font-medium tracking-tighter">
             and resources.

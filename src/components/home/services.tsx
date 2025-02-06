@@ -1,11 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { services } from "@/constants/services";
+import { cn } from "@/lib/utils";
 
-function Services() {
+function Services({ className = "" }) {
   return (
-    <section className="max-w-6xl mx-auto px-6 md:px-4">
-      <h1 className="max-w-2xl mx-auto text-center py-16 md:py-20 lg:py-24 font-medium text-4xl md:text-5xl lg:text-6xl">
+    <section
+      className={cn(
+        "max-w-6xl flex flex-col gap-10 md:gap-12 lg:gap-16 mx-auto py-4 md:py-6 lg:py-10 px-6 md:px-4",
+        className
+      )}
+    >
+      <h1 className="max-w-2xl mx-auto text-center font-medium text-4xl md:text-5xl lg:text-6xl">
         <span className="font-title">Explore our services</span> <br />
         <span className="font-uncut font-medium tracking-tighter">
           That suits for you

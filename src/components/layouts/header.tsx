@@ -58,13 +58,13 @@ function Header() {
           "max-w-6xl mx-auto flex items-center justify-between py-3 px-6 md:px-4"
         )}
       >
-        <Link href="/">
+        <Link onClick={() => setIsMobileOpen(false)} href="/">
           <Image
             className="h-12"
             src="/images/icons/compact-logo.svg"
             width={200}
             height={80}
-            alt="Coderbrix"
+            alt="Coderbrix Logo"
           />
         </Link>
         <ul className="hidden lg:flex items-center gap-6">

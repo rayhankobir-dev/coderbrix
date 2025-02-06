@@ -79,13 +79,13 @@ function BlogGrid() {
         </span>
       </h1>
 
-      <div className="relative flex items-center justify-end gap-2 font-medium overflow-x-scroll no-scrollbar mb-6">
+      <div className="relative flex gap-2 md:gap-2.5 rounded-full overflow-x-scroll no-scrollbar mt-10 lg:mt-0 mb-6">
         {blogCategories.map((category, index) => (
           <button
             key={index}
             onClick={() => handleClick(category)}
             className={cn(
-              "relative z-10 px-5 py-2.5 border rounded-full font-medium font-manrope text-base text-nowrap uppercase transition-colors duration-300",
+              "relative z-10 h-fit min-w-fit px-5 py-2.5 border rounded-full font-medium font-manrope text-base text-nowrap uppercase transition-colors duration-300",
               selected.slug === category.slug && "text-white"
             )}
           >

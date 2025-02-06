@@ -2,10 +2,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
-function WhyChooseSection() {
+function WhyChooseSection({ className = "" }) {
   return (
-    <section id="service" className=" py-24 px-6 md:px-4">
+    <section
+      id="service"
+      className={cn("py-12 md:py-16 lg:py-24 px-6 md:px-4", className)}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="mb-20 grid grid-cols-1 items-center gap-12 lg:grid-cols-3">
           <div className="col-span-1">
