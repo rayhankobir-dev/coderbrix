@@ -66,6 +66,10 @@ export default function RootLayout({
       <head>
         <meta name="author" content="Coderbrix" />
         <meta
+          name="p:domain_verify"
+          content="3d5b56fef68ba0896d709f837a1b7700"
+        />
+        <meta
           name="google-site-verification"
           content="dsI4U5rEKDUy3-051Dlc4oHptlGuApdu5Bu-SODE78E"
         />
