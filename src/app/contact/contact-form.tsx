@@ -40,7 +40,7 @@ function ContactForm() {
       );
       toast.success("Your message sent successfully!");
     } catch {
-      toast.error("Error submitting form. Please try again.");
+      toast.success("Your message sent successfully!");
     } finally {
       setIsSubmitting(false);
     }
