@@ -9,7 +9,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://www.coderbrix.com",
+      url: "https://www.coderbrix.com/services",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: "https://www.coderbrix.com/blogs",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: "https://www.coderbrix.com/about",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 1,
+    },
+    {
+      url: "https://www.coderbrix.com/contact",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
