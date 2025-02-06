@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { CheckCircle, Mail, Star } from "lucide-react";
 
@@ -7,13 +7,15 @@ function NewsLetter() {
   return (
     <section
       className={cn(
-        "relative w-full max-w-6xl h-fit mx-auto rounded-2xl lg:rounded-3xl overflow-hidden"
+        "relative w-full max-w-6xl h-fit mx-auto rounded-none md:rounded-2xl lg:rounded-3xl overflow-hidden"
       )}
     >
-      <img
+      <Image
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/images/bg/green-strip-bg.png"
-        alt="news letter"
+        alt="Coderbrix news letter"
+        width={1200}
+        height={800}
       />
 
       <div className="relative w-full h-full flex flex-col items-center justify-between gap-8 px-6 py-12 md:py-20 lg:py-36 bg-primary/50">
@@ -29,7 +31,7 @@ function NewsLetter() {
           <input
             type="email"
             placeholder="Enter your email address"
-            className="w-full px-2.5 py-2 bg-transparent text-base text-foreground placeholder:text-white focus:outline-none"
+            className="w-full px-2.5 py-2 bg-transparent text-base text-white placeholder:text-white focus:outline-none"
           />
           <button className="w-fit py-2.5 px-5 rounded-full font-manrope font-medium text-base bg-white text-primary/80">
             Subscribe

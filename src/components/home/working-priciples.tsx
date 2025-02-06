@@ -75,21 +75,21 @@ const galleryItems: GalleryItem[] = [
     title: "1. Geting your requirements",
     description:
       "Before we start, we will get your requirements. We will work with you to get the best solution for your business.",
-    url: "https://cdn.prod.website-files.com/6735edbc3f73bc3fd0c25a76/676aef06de70d0f2fd98e5bd_image%20(21).avif",
+    url: "/images/processs-1.webp",
   },
   {
     id: "2",
     title: "2. Developing your solution",
     description:
       "Our software development team will work with you to develop your solution. We will provide you with the best solution for your business.",
-    url: "https://cdn.prod.website-files.com/6735edbc3f73bc3fd0c25a76/67683527319c57a007638722_slider%203.webp",
+    url: "/images/proccess-2.webp",
   },
   {
     id: "3",
     title: "3. Testing and delivering",
     description:
       "Coderbrix test before deliver the work. We want to provide the best solution for you. We will test your solution and deliver it to you with cheerfulness.",
-    url: "https://cdn.prod.website-files.com/6735edbc3f73bc3fd0c25a76/67683501f5037266b15d4b71_slider%202.webp",
+    url: "/images/proccess-3.webp",
   },
 ];
 

@@ -3,8 +3,8 @@ import React from "react";
 
 function NotFoundPage() {
   return (
-    <main className="max-w-6xl h-[80vh] flex flex-col justify-center items-center mx-auto">
-      <h1 className="font-title font-medium text-4xl md:text-5xl lg:text-6xl text-primary">
+    <main className="max-w-6xl h-[80vh] flex flex-col justify-center items-center mx-auto px-6 md:px-4">
+      <h1 className="font-title font-medium text-5xl md:text-5xl lg:text-6xl text-primary">
         404
       </h1>
       <h2 className="font-uncut font-medium tracking-tighter text-4xl text-primary">

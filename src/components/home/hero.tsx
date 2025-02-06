@@ -1,15 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
-import { PhoneIcon } from "lucide-react";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import { PhoneIcon } from "lucide-react";
+import Image from "next/image";
 
 function Hero() {
   return (
     <section id="home" className="relative w-full h-fit py-24 overflow-hidden">
-      <img
-        className="absolute top-0 left-0 w-full"
+      <Image
+        className="absolute top-0 left-0 w-full h-auto"
         src="/images/vectors/shape.svg"
         alt="shape"
+        width={1200}
+        height={800}
       />
 
       <div className="relative flex flex-col items-center gap-8 px-6 md:px-4">

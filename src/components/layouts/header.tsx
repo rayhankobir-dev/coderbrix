@@ -1,17 +1,11 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
-
-const links = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/blogs", label: "Blogs" },
-  { href: "/about", label: "About" },
-];
+import { usePathname } from "next/navigation";
+import { navLinks } from "@/constants/links";
 
 function Header() {
   const [isMobileOpen, setIsMobileOpen] = React.useState(false);
@@ -74,23 +68,23 @@ function Header() {
           />
         </Link>
         <ul className="hidden lg:flex items-center gap-6">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li
               className={cn(
                 "overflow-hidden",
-                pathname === link.href && "text-primary"
+                pathname === link.name && "text-primary"
               )}
-              key={link.href}
+              key={link.path}
             >
               <Link
                 className="relative group text-lg overflow-hidden"
-                href={link.href}
+                href={link.path}
               >
                 <span className="block transition-transform duration-500 group-hover:-translate-y-full">
-                  {link.label}
+                  {link.name}
                 </span>
                 <span className="absolute inset-0 block translate-y-full transition-transform duration-500 group-hover:translate-y-0 text-primary">
-                  {link.label}
+                  {link.name}
                 </span>
               </Link>
             </li>
@@ -121,24 +115,24 @@ function Header() {
         )}
       >
         <ul className="flex flex-col px-6 py-4 border-t overflow-hidden">
-          {links.map((link) => (
+          {navLinks.map((link) => (
             <li
               className={cn(
                 "my-2 overflow-hidden",
-                pathname === link.href && "text-primary"
+                pathname === link.path && "text-primary"
               )}
-              key={link.href}
+              key={link.path}
               onClick={() => setIsMobileOpen(false)}
             >
               <Link
                 className="relative group text-lg overflow-hidden"
-                href={link.href}
+                href={link.path}
               >
                 <span className="block transition-transform duration-500 group-hover:-translate-y-full">
-                  {link.label}
+                  {link.name}
                 </span>
                 <span className="absolute inset-0 block translate-y-full transition-transform duration-500 group-hover:translate-y-0 text-primary">
-                  {link.label}
+                  {link.name}
                 </span>
               </Link>
             </li>
@@ -147,15 +141,20 @@ function Header() {
 
         <div className="grid grid-cols-2 gap-4 px-6 py-8">
           <Link
+            onClick={() => setIsMobileOpen(false)}
             className="w-full block py-2.5 px-5 rounded-full bg-primary/90 font-manrope text-base text-white"
-            href="/meeting"
+            href="https://calendly.com/coderbrix"
           >
             Schedule a Call
           </Link>
 
-          <button className="w-full py-2.5 px-5 rounded-full border font-manrope text-base text-neutral-700">
-            <span className="">Learn More</span>
-          </button>
+          <Link
+            href="/contact"
+            onClick={() => setIsMobileOpen(false)}
+            className="w-full py-2.5 px-5 rounded-full border font-manrope text-base text-neutral-700"
+          >
+            <span className="">Contact Us</span>
+          </Link>
         </div>
       </div>
     </header>

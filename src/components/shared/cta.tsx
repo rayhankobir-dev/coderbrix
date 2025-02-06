@@ -1,15 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
 
 function Cta() {
   return (
     <section className="relative w-full h-fit py-20 md:py-36 mt-10 md:mt-14 lg:mt-20 bg-[#0c3721] overflow-hidden">
-      <img
+      <Image
         className="absolute top-0 left-0 w-full md:h-full object-cover md:object-left-top"
         src="/images/vectors/cta-section.svg"
         alt="cta section"
+        width={1200}
+        height={800}
       />
 
       <div className="relative max-w-4xl flex flex-col items-center justify-between gap-8 mx-auto px-6">

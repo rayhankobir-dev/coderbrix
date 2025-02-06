@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { JSX } from "react";
 import { ReactLenis } from "lenis/react";
-import { ShieldCheck } from "lucide-react";
+import { Check, ShieldCheck } from "lucide-react";
 
 export default function WorkingProcedure(): JSX.Element {
   return (
@@ -19,35 +19,32 @@ export default function WorkingProcedure(): JSX.Element {
                 The large scale benefits of Primex
               </h2>
               <p className="text-lg">
-                Concentrate on leads that have been thoroughly verified and are
-                ready to be converted into loyal customers, ensuring a higher
-                success rate.
+                Our solutions have helped thousands of businesses to reach new
+                heights of success while creating our digital footprint in the
+                global economy.
               </p>
             </div>
 
             <ul className="space-y-4">
               <li className="flex items-start gap-4">
-                <ShieldCheck className="h-12 w-12 text-primary" />
+                <div className="h-8 w-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Check className="text-primary h-5 w-5" />
+                </div>
                 <div className="space-y-2">
                   <h3 className="font-medium font-uncut tracking-tighter text-xl">
-                    Increased conversion rate
+                    Transforming Tech Visions of Entrepreneurs into Reality
                   </h3>
-                  <p className="text-base">
-                    Increased conversion rate by focusing on leads that have
-                    been thoroughly verified and are ready to be converted into.
-                  </p>
                 </div>
               </li>
 
               <li className="flex items-start gap-4">
-                <ShieldCheck className="h-8 w-8 text-primary" />
+                <div className="h-8 w-8 bg-primary/10 rounded-full flex items-center justify-center">
+                  <Check className="text-primary h-5 w-5" />
+                </div>
                 <div className="space-y-2">
                   <h3 className="font-medium font-uncut tracking-tighter text-xl">
-                    Increased conversion rate
+                    That Empowers Job Opportunities for the Local Citizens
                   </h3>
-                  <p className="text-base">
-                    Increased conversion rate by focusing on leads that have.
-                  </p>
                 </div>
               </li>
 

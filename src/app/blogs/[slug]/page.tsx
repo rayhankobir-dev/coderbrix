@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import MarkdownRenderer from "./markdown";
 
 function SingleBlog() {
@@ -21,10 +22,12 @@ function SingleBlog() {
         </div>
       </section>
 
-      <img
+      <Image
         className="max-w-7xl mx-auto aspect-[16/7] rounded-2xl overflow-hidden"
-        src="https://cdn.prod.website-files.com/6737c1285c19cb297eefcddf/6739b17255e14a019c674270_image-6.webp"
+        src="/images/blog-demo.webp"
         alt=""
+        width={1200}
+        height={800}
       />
 
       <section className="max-w-6xl mx-auto mt-10 px-6 md:px-4">

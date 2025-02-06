@@ -1,19 +1,31 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section className="py-24">
       <div className="w-fit flex items-center gap-5 mx-auto">
-        <img src="/images/vectors/line.svg" alt="line" />
+        <Image
+          src="/images/vectors/line.svg"
+          alt="line"
+          width={1200}
+          height={800}
+        />
         <div className="flex items-center font-semibold text-5xl text-primary">
-          <img
-            className="h-12"
+          <Image
+            className="h-12 w-auto"
             src="https://www.coderbrix.com/coderbrix.svg"
             alt="Coderbrix Logo"
+            width={200}
+            height={100}
           />
         </div>
-        <img className="rotate-180" src="/images/vectors/line.svg" alt="line" />
+        <Image
+          src="/images/vectors/line.svg"
+          alt="line"
+          width={1200}
+          height={800}
+        />
       </div>
 
       <div className="max-w-xl mx-auto py-5">

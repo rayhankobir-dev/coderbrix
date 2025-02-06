@@ -9,6 +9,7 @@ import SalesIQ from "@/components/shared/salesiq";
 import { Instrument_Sans, Manrope } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Toaster } from "react-hot-toast";
 
 const uncutSans = localFont({
   src: [
@@ -137,6 +138,7 @@ export default function RootLayout({
         </Script>
 
         <SalesIQ />
+        <Toaster />
       </body>
     </html>
   );

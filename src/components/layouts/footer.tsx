@@ -1,60 +1,20 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
-import { Mail, MapPinnedIcon } from "lucide-react";
-
-const socialLinks = [
-  {
-    label: "LinkedIn",
-    href: "",
-  },
-  {
-    label: "Facebook",
-    href: "",
-  },
-  {
-    label: "Dribble",
-    href: "",
-  },
-  {
-    label: "Behance",
-    href: "",
-  },
-];
-
-const quickLinks = [
-  {
-    label: "Home",
-    href: "/",
-  },
-  {
-    label: "Services",
-    href: "/services",
-  },
-  {
-    label: "Blogs",
-    href: "/blogs",
-  },
-  {
-    label: "About Us",
-    href: "/about",
-  },
-  {
-    label: "Contact Us",
-    href: "/contact",
-  },
-];
+import Image from "next/image";
+import { quickLinks, socialLinks } from "@/constants/links";
 
 function Footer() {
   return (
-    <footer className="mt-16 pt-16 border-t border-neutral-200">
+    <footer className="mt-10 md:mt-16 pt-16 border-t border-neutral-200">
       <section className="max-w-6xl flex flex-col gap-10 mx-auto px-6 md:px-4">
         <nav className="flex flex-col md:flex-row items-start justify-between gap-12">
           <div className="max-w-sm flex flex-col items-start gap-4">
-            <img
+            <Image
+              className="h-12 w-auto"
               src="/images/icons/compact-logo.svg"
+              width={120}
+              height={120}
               alt="Coderbrix Logo"
-              className="h-14"
             />
 
             <h5 className="text-lg">
@@ -65,10 +25,12 @@ function Footer() {
 
             <div className="flex items-center gap-2.5 mt-6">
               <Link href="">
-                <img
+                <Image
                   className="h-12"
                   src="/images/icons/codecynon.svg"
                   alt="Codecynon"
+                  width={200}
+                  height={100}
                 />
               </Link>
 
@@ -85,8 +47,8 @@ function Footer() {
             <ul className="col-span-2 lg:col-span-1 flex flex-col gap-2.5">
               <li className="font-medium text-xl mb-2">Quick Links</li>
               {quickLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href="/">{link.label}</Link>
+                <li key={link.name}>
+                  <Link href={link.path}>{link.name}</Link>
                 </li>
               ))}
             </ul>
@@ -94,8 +56,8 @@ function Footer() {
             <ul className="col-span-2 lg:col-span-1 flex flex-col gap-2.5">
               <li className="font-medium text-xl mb-2">Follow Us</li>
               {socialLinks.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href}>{link.label}</Link>
+                <li key={link.name}>
+                  <Link href={link.path}>{link.name}</Link>
                 </li>
               ))}
             </ul>
@@ -104,10 +66,9 @@ function Footer() {
               <li className="font-medium text-xl mb-2">Contact Us</li>
               <div className="text-base space-y-2">
                 <div className="inline-flex items-end gap-1.5">
-                  <Mail size={18} className="min-w-fit" /> support@coderbrix.com
+                  support@coderbrix.com
                 </div>
                 <div className="inline-flex items-start gap-1.5">
-                  <MapPinnedIcon size={18} className="min-w-fit" />
                   Level 05, House 05, Road 12, Sector 1, Uttara Dhaka,
                   Bangladesh
                 </div>

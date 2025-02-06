@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { ArrowUpRight, BriefcaseBusiness } from "lucide-react";
 import React from "react";
 
