@@ -85,7 +85,7 @@ function Footer() {
           </div>
         </nav>
         <p className="py-5 border-t font-uncut tracking-tight opacity-70 text-base text-center">
-          &copy; 2022 Coderbrix. All rights reserved.
+          &copy; 2025 Coderbrix. All rights reserved.
         </p>
       </section>
     </footer>
