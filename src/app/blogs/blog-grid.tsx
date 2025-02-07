@@ -79,7 +79,7 @@ function BlogGrid() {
         </span>
       </h1>
 
-      <div className="relative flex gap-2 md:gap-2.5 rounded-full overflow-x-scroll no-scrollbar mt-10 lg:mt-0 mb-6">
+      <div className="relative flex justify-end gap-2 md:gap-2.5 rounded-full overflow-x-scroll no-scrollbar mt-10 lg:mt-2 mb-6">
         {blogCategories.map((category, index) => (
           <button
             key={index}
